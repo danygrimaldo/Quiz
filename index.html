@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ TIME</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <h1>Web Dev Quiz</h1>
+
+  <!--Set Quiz Container -->
+  <form id="quiz" name="quiz">
+    <button id="start-button" class="button">Start Quiz</button>
+    <br>
+
+    <p class="questions" style="font-weight: 900;">A Question</p>
+    <input type="radio" id="correct" name="questions" value= 1> Correct Answer<br>
+    <input type="radio" id="incorrect" name="questions" value="0"> Wrong Answer<br>
+    <input type="radio" id="incorrect" name="questions" value="0"> Wrong Answer<br>
+    <input type="radio" id="incorrect" name="questions" value="0"> Wrong Answer<br>
+
+    <!-- Submit Answer Button -->
+    
+    <input id="next-button" type="button" value="Next" onclick="next();">
+  </form>
+
+  <!-- Questions in .js will be triggered here, will need to link it here! -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="quiz.js"></script>
+
+  <div>
+    <!-- User submits name here -->
+    <form id="name" name="name">
+      <p class="submitName">Enter Name</p>
+      <input id="textbox" type="text" name="submitName" value="">
+      <input id="button" type="button" value="Done" onclick="done();">
+    </form>
+
+  </div>
+</body>
+
+
+</html>
